@@ -1,0 +1,15 @@
+{
+  "name": "screencast",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WebRTC screen-sharing rooms — one broadcaster, many viewers, chat included",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.17.1"
+  },
+  "engines": { "node": ">=18" }
+}

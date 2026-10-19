@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ScreenCast</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">ScreenCast</div>
+    <div class="room">
+      <span class="label">room</span>
+      <input id="roomInput" spellcheck="false" />
+      <button id="joinBtn" class="ghost">join</button>
+    </div>
+    <div class="me" id="meLabel">connecting…</div>
+  </header>
+
+  <main class="shell">
+    <section class="stage" id="stage">
+      <div class="empty" id="emptyState">No stream yet — press <b>Share screen</b> to broadcast.</div>
+    </section>
+
+    <aside class="side">
+      <div class="controls">
+        <button id="shareBtn" class="primary">Share screen</button>
+      </div>
+
+      <div class="panel">
+        <h2>Participants <span id="peerCount">0</span></h2>
+        <ul id="roster" class="roster"></ul>
+      </div>
+
+      <div class="panel chat">
+        <h2>Chat</h2>
+        <ul id="messages" class="messages"></ul>
+        <form id="chatForm" class="chat-form" autocomplete="off">
+          <input id="chatInput" placeholder="message" maxlength="2000" />
+          <button class="ghost" type="submit">send</button>
+        </form>
+      </div>
+    </aside>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
